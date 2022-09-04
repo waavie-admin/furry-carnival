@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "research_tags",
+  "info": {
+    "singularName": "research-tag",
+    "pluralName": "research-tags",
+    "displayName": "ResearchTag"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ResearchTag": {
+      "type": "string"
+    }
+  }
+}

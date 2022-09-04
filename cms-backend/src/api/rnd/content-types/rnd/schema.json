@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rnds",
+  "info": {
+    "singularName": "rnd",
+    "pluralName": "rnds",
+    "displayName": "RND",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ResearchName": {
+      "type": "string"
+    },
+    "ResearchID": {
+      "type": "string"
+    },
+    "ResearchNotes": {
+      "type": "text"
+    },
+    "ResearchImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "ResearchName"
+    },
+    "research_tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::research-tag.research-tag"
+    }
+  }
+}
