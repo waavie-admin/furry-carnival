@@ -39,13 +39,16 @@
       "targetField": "ProjectName",
       "required": true
     },
-    "ProjectLocation": {
-      "type": "string"
-    },
     "tags": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::tag.tag"
+    },
+    "location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location",
+      "inversedBy": "project"
     }
   }
 }
